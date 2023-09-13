@@ -99,61 +99,71 @@ export const useMyStore = defineStore('myStore', {
         id: 1,
         name: 'Proveedor A',
         address: 'Dirección 1',
-        phone: '123-456-7890'
+        phone: '123-456-7890',
+        email: 'proveedorA@example.com'
       },
       {
         id: 2,
         name: 'Proveedor B',
         address: 'Dirección 2',
-        phone: '987-654-3210'
+        phone: '987-654-3210',
+        email: 'proveedorB@example.com'
       },
       {
         id: 3,
         name: 'Proveedor C',
         address: 'Dirección 3',
-        phone: '555-555-5555'
+        phone: '555-555-5555',
+        email: 'proveedorC@example.com'
       },
       {
         id: 4,
         name: 'Proveedor D',
         address: 'Dirección 4',
-        phone: '444-444-4444'
+        phone: '444-444-4444',
+        email: 'proveedorD@example.com'
       },
       {
         id: 5,
         name: 'Proveedor E',
         address: 'Dirección 5',
-        phone: '333-333-3333'
+        phone: '333-333-3333',
+        email: 'proveedorE@example.com'
       },
       {
         id: 6,
         name: 'Proveedor F',
         address: 'Dirección 6',
-        phone: '222-222-2222'
+        phone: '222-222-2222',
+        email: 'proveedorF@example.com'
       },
       {
         id: 7,
         name: 'Proveedor G',
         address: 'Dirección 7',
-        phone: '111-111-1111'
+        phone: '111-111-1111',
+        email: 'proveedorG@example.com'
       },
       {
         id: 8,
         name: 'Proveedor H',
         address: 'Dirección 8',
-        phone: '999-999-9999'
+        phone: '999-999-9999',
+        email: 'proveedorH@example.com'
       },
       {
         id: 9,
         name: 'Proveedor I',
         address: 'Dirección 9',
-        phone: '888-888-8888'
+        phone: '888-888-8888',
+        email: 'proveedorI@example.com'
       },
       {
         id: 10,
         name: 'Proveedor J',
         address: 'Dirección 10',
-        phone: '777-777-7777'
+        phone: '777-777-7777',
+        email: 'proveedorJ@example.com'
       }
     ]
   }),

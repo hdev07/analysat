@@ -16,7 +16,7 @@ import { useMyStore } from '@/store/myStore.js'
 import { onMounted } from 'vue'
 
 const title = 'Lista de Proveedores'
-const headers = ['Proveedor', 'Contacto', 'Teléfono', 'Email']
+const headers = ['Id', 'Proveedor', 'Contacto', 'Teléfono', 'Email']
 
 const myStore = useMyStore()
 const providers = myStore.providers
