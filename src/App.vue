@@ -7,6 +7,8 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="mx-auto max-w-screen-xl px-4 py- sm:px-6 lg:px-8">
       <nav class="flex justify-center gap-4 my-4 text-2xl underline">
         <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/orders">orders</RouterLink>
+        <RouterLink to="/providers">providers</RouterLink>
       </nav>
     </div>
   </header>
