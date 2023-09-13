@@ -10,7 +10,7 @@
             <th
               v-for="(header, index) in headers"
               :key="index"
-              class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              class="px-6 py-3 text-xs font-medium text-gray-500 text-center uppercase tracking-wider"
             >
               {{ header }}
             </th>
@@ -21,7 +21,7 @@
             <td
               v-for="(key, columnIndex) in keys"
               :key="columnIndex"
-              class="px-6 py-3 whitespace-nowrap"
+              class="px-6 py-3 whitespace-nowrap text-center"
             >
               <template v-if="key === 'products'">
                 {{ getProductNames(item.products) }}
