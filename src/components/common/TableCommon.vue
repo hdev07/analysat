@@ -1,8 +1,5 @@
 <template>
-  <div class="text-white">
-    <h2 class="text-xl font-semibold my-8 text-center mx-3">
-      {{ title }}
-    </h2>
+  <div class="text-white border-spacing-2 my-3">
     <div class="overflow-x-auto">
       <table class="min-w-full divide-y divide-slate-200">
         <thead>
@@ -21,10 +18,13 @@
             <td
               v-for="(key, columnIndex) in keys"
               :key="columnIndex"
-              class="px-6 py-3 whitespace-nowrap text-center transition hover:bg-gray-900 hover:text-slate"
+              class="px-6 py-3 whitespace-nowrap text-center transition hover:bg-gray-900"
             >
               <template v-if="key === 'products'">
                 {{ getProductNames(item.products) }}
+              </template>
+              <template v-else-if="key == 'price'">
+                {{ '$' }} {{ calculateTotalOrder(item.products) }}
               </template>
               <template v-else>
                 {{ item[key] }}
@@ -38,8 +38,7 @@
 </template>
 
 <script setup>
-const { title, headers, data } = defineProps({
-  title: String,
+const { headers, data } = defineProps({
   headers: Array,
   data: Array
 })

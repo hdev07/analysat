@@ -1,5 +1,18 @@
 <template>
-  <div>
+  <div class="m-4">
+    <div class="flex justify-between my-8">
+      <h2 class="text-xl font-semibold text-center mx-3">
+        {{ title }}
+      </h2>
+      <v-btn
+        prepend-icon="mdi-plus-circle-outline"
+        variant="outlined"
+        rounded="lg"
+        color="primary"
+      >
+        Añadir Proveedor
+      </v-btn>
+    </div>
     <TableData
       v-if="providers && providers.length > 0"
       :title="title"
