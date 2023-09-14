@@ -64,13 +64,9 @@ const toggleMobileMenu = () => {
 
   <footer class="bg-gray-900 fixed bottom-0 w-100">
     <div class="mx-auto max-w-screen-xl px-4 py-4">
-      <div class="lg:flex lg:items-center lg:justify-between">
-        <p
-          class="max-w-md text-center leading-relaxed text-gray-400 sm:text-left"
-        >
-          Todos los derechos reservados. hecho con el ❤️
-        </p>
-      </div>
+      <p class="text-right leading-relaxed text-gray-400 text-xs">
+        Todos los derechos reservados. hecho con el ❤️
+      </p>
     </div>
   </footer>
 
