@@ -4,24 +4,24 @@
       {{ title }}
     </h2>
     <div class="overflow-x-auto">
-      <table class="min-w-full divide-y divide-gray-200">
-        <thead class="bg-gray-100">
+      <table class="min-w-full divide-y divide-slate-200">
+        <thead class="bg-slate-100">
           <tr>
             <th
               v-for="(header, index) in headers"
               :key="index"
-              class="px-6 py-3 text-xs font-medium text-gray-500 text-center uppercase tracking-wider"
+              class="px-6 py-3 text-xs font-medium text-slate-500 text-center uppercase tracking-wider"
             >
               {{ header }}
             </th>
           </tr>
         </thead>
-        <tbody class="bg-white divide-y divide-gray-200">
+        <tbody class="bg-white divide-y divide-slate-200">
           <tr v-for="(item, index) in data" :key="index">
             <td
               v-for="(key, columnIndex) in keys"
               :key="columnIndex"
-              class="px-6 py-3 whitespace-nowrap text-center"
+              class="px-6 py-3 whitespace-nowrap text-center transition hover:bg-slate-200"
             >
               <template v-if="key === 'products'">
                 {{ getProductNames(item.products) }}
