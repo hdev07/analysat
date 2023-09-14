@@ -1,20 +1,26 @@
 <template>
   <div class="m-5">
     <v-form @submit.prevent="addOrder" class="z-10">
-      <v-text-field v-model="order.provider" label="Proveedor" required />
+      <v-text-field
+        v-model="order.provider"
+        label="Proveedor"
+        required
+        :rules="[(v) => !!v || 'El proveedor es requerido']"
+      />
 
       <v-text-field
         v-model="order.date"
         label="Fecha de Orden"
         type="date"
         required
+        :rules="[(v) => !!v || 'La fecha de orden es requerida']"
       />
 
       <v-text-field
         v-model="productName"
         label="Nombre del Producto"
-        @input="updateProduct"
         required
+        :rules="[(v) => !!v || 'El nombre del producto es requerido']"
       />
 
       <v-text-field
@@ -22,6 +28,10 @@
         label="Precio del Producto"
         type="number"
         required
+        :rules="[
+          (v) => !!v || 'El precio del producto es requerido',
+          (v) => !isNaN(parseFloat(v)) || 'El precio debe ser un número válido'
+        ]"
       />
 
       <v-btn @click="addProduct" color="primary">Agregar Producto</v-btn>
@@ -60,15 +70,6 @@ const productPrice = ref('')
 
 const myStore = useMyStore()
 
-const updateProduct = () => {
-  // Actualiza el producto en tiempo real mientras se escribe
-  const name = productName.value
-  const price = parseFloat(productPrice.value)
-  if (name && !isNaN(price)) {
-    order.value.products.push({ name, price })
-  }
-}
-
 const addProduct = () => {
   // Agrega un producto a la orden
   const name = productName.value
@@ -99,8 +100,19 @@ const addOrder = () => {
     return
   }
 
+  // Genera un ID aleatorio para la orden
+  const orderId = generateRandomId()
+
+  // Agrega el ID a la orden
+  const newOrder = {
+    id: orderId,
+    provider: order.value.provider,
+    date: order.value.date,
+    products: order.value.products
+  }
+
   // Agrega la nueva orden al store
-  myStore.addOrder(order.value)
+  myStore.addOrder(newOrder)
 
   // Limpia el formulario
   order.value = {
@@ -108,5 +120,11 @@ const addOrder = () => {
     date: '',
     products: []
   }
+}
+
+const generateRandomId = () => {
+  const min = 10000000 // Mínimo valor de 8 dígitos
+  const max = 99999999 // Máximo valor de 8 dígitos
+  return String(Math.floor(Math.random() * (max - min + 1)) + min)
 }
 </script>
