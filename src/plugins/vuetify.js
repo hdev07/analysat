@@ -6,6 +6,7 @@ import { fa } from 'vuetify/iconsets/fa'
 import { aliases, mdi } from 'vuetify/lib/iconsets/mdi'
 
 const themeDark = {
+  dark: true,
   colors: {
     primary: '#0E3A5D',
     secondary: '#03B5CF',
