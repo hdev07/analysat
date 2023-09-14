@@ -8,7 +8,11 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      component: () => import('@/layouts/mainLayout.vue'),
+      component: () => import('@/views/IndexView.vue')
+    },
+    {
+      path: '/',
+      component: () => import('@/layouts/MainLayout.vue'),
       children: [
         {
           path: '/orders',
