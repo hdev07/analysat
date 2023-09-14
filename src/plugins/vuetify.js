@@ -8,7 +8,7 @@ import { aliases, mdi } from 'vuetify/lib/iconsets/mdi'
 const themeDark = {
   dark: true,
   colors: {
-    primary: '#0E3A5D',
+    primary: '#3b82f6',
     secondary: '#03B5CF',
     tertary: '#1A1A1A'
   }
