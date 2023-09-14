@@ -184,6 +184,9 @@ export const useMyStore = defineStore('myStore', {
     async loadProviders() {
       const response = await fetch('/api/providers')
       this.providers = await response.json()
+    },
+    addOrder(order) {
+      this.orders.push(order)
     }
   }
 })
