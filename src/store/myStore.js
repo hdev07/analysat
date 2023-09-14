@@ -10,7 +10,8 @@ export const useMyStore = defineStore('myStore', {
         products: [
           { id: 101, name: 'Producto 1', price: 10 },
           { id: 102, name: 'Producto 2', price: 15 }
-        ]
+        ],
+        price: ''
       },
       {
         id: 2,
@@ -19,7 +20,8 @@ export const useMyStore = defineStore('myStore', {
         products: [
           { id: 103, name: 'Producto 3', price: 20 },
           { id: 104, name: 'Producto 4', price: 25 }
-        ]
+        ],
+        price: ''
       },
       {
         id: 3,
@@ -28,7 +30,8 @@ export const useMyStore = defineStore('myStore', {
         products: [
           { id: 105, name: 'Producto 5', price: 30 },
           { id: 106, name: 'Producto 6', price: 35 }
-        ]
+        ],
+        price: ''
       },
       {
         id: 4,
@@ -37,7 +40,8 @@ export const useMyStore = defineStore('myStore', {
         products: [
           { id: 107, name: 'Producto 7', price: 40 },
           { id: 108, name: 'Producto 8', price: 45 }
-        ]
+        ],
+        price: ''
       },
       {
         id: 5,
@@ -46,7 +50,8 @@ export const useMyStore = defineStore('myStore', {
         products: [
           { id: 109, name: 'Producto 9', price: 50 },
           { id: 110, name: 'Producto 10', price: 55 }
-        ]
+        ],
+        price: ''
       },
       {
         id: 6,
@@ -55,7 +60,8 @@ export const useMyStore = defineStore('myStore', {
         products: [
           { id: 111, name: 'Producto 11', price: 60 },
           { id: 112, name: 'Producto 12', price: 65 }
-        ]
+        ],
+        price: ''
       },
       {
         id: 7,
@@ -64,7 +70,8 @@ export const useMyStore = defineStore('myStore', {
         products: [
           { id: 113, name: 'Producto 13', price: 70 },
           { id: 114, name: 'Producto 14', price: 75 }
-        ]
+        ],
+        price: ''
       },
       {
         id: 8,
@@ -73,7 +80,8 @@ export const useMyStore = defineStore('myStore', {
         products: [
           { id: 115, name: 'Producto 15', price: 80 },
           { id: 116, name: 'Producto 16', price: 85 }
-        ]
+        ],
+        price: ''
       },
       {
         id: 9,
@@ -82,7 +90,8 @@ export const useMyStore = defineStore('myStore', {
         products: [
           { id: 117, name: 'Producto 17', price: 90 },
           { id: 118, name: 'Producto 18', price: 95 }
-        ]
+        ],
+        price: ''
       },
       {
         id: 10,
