@@ -20,7 +20,7 @@ const toggleMobileMenu = () => {
 </script>
 
 <template>
-  <header class="bg-slate-200">
+  <header class="bg-gray-900 text-white">
     <div
       class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8"
     >
@@ -64,7 +64,7 @@ const toggleMobileMenu = () => {
 
   <div class="md:hidden" :class="{ hidden: !mobileMenuVisible }">
     <div
-      class="fixed inset-0 z-20 flex flex-col items-center justify-center bg-slate-300"
+      class="fixed inset-0 z-20 flex flex-col items-center justify-center bg-gray-900 text-white"
     >
       <div class="absolute top-0 w-full flex">
         <button

@@ -12,7 +12,7 @@ const router = createRouter({
     },
     {
       path: '/',
-      component: () => import('@/layouts/MainLayout.vue'),
+      component: () => import('@/layouts/NavbarLayout.vue'),
       children: [
         {
           path: '/orders',
