@@ -30,7 +30,8 @@
         required
         :rules="[
           (v) => !!v || 'El precio del producto es requerido',
-          (v) => !isNaN(parseFloat(v)) || 'El precio debe ser un número válido'
+          (v) => !isNaN(parseFloat(v)) || 'El precio debe ser un número válido',
+          (v) => parseFloat(v) >= 0 || 'El precio no puede ser negativo'
         ]"
       />
 
@@ -74,7 +75,7 @@ const addProduct = () => {
   // Agrega un producto a la orden
   const name = productName.value
   const price = parseFloat(productPrice.value)
-  if (name && !isNaN(price)) {
+  if (name && !isNaN(price) && price >= 0) {
     order.value.products.push({ name, price })
     // Limpia los campos de entrada de productos
     productName.value = ''
