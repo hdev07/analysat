@@ -3,7 +3,7 @@ import ButtonCommon from '../components/common/ButtonCommon.vue'
 </script>
 <template>
   <div
-    class="bg-gray-900 text-white h-screen mx-auto max-w-screen-xl px-4 py-32 flex items-center"
+    class="bg-gray-900 text-white h-screen mx-auto px-4 py-32 flex items-center"
   >
     <div class="mx-auto max-w-3xl text-center">
       <h1
