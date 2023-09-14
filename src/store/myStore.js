@@ -187,6 +187,9 @@ export const useMyStore = defineStore('myStore', {
     },
     addOrder(order) {
       this.orders.push(order)
+    },
+    addProvider(provider) {
+      this.providers.push(provider)
     }
   }
 })

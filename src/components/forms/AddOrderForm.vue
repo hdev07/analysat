@@ -88,7 +88,6 @@ const removeProduct = (index) => {
 }
 
 const addOrder = () => {
-  // Realiza las validaciones necesarias aquí
   if (
     !order.value.provider ||
     !order.value.date ||
@@ -100,10 +99,8 @@ const addOrder = () => {
     return
   }
 
-  // Genera un ID aleatorio para la orden
   const orderId = generateRandomId()
 
-  // Agrega el ID a la orden
   const newOrder = {
     id: orderId,
     provider: order.value.provider,
