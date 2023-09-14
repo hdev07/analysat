@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-auto">
     <TableData
       v-if="orders && orders.length > 0"
       :title="title"
@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import TableData from '@/components/common/TableData.vue'
+import TableData from '@/components/common/TableCommon.vue'
 import { useMyStore } from '@/store/myStore.js'
 import { onMounted } from 'vue'
 
