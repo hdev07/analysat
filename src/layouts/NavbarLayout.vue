@@ -62,6 +62,18 @@ const toggleMobileMenu = () => {
 
   <RouterView />
 
+  <footer class="bg-gray-900 fixed bottom-0 w-100">
+    <div class="mx-auto max-w-screen-xl px-4 py-4">
+      <div class="lg:flex lg:items-center lg:justify-between">
+        <p
+          class="max-w-md text-center leading-relaxed text-gray-400 sm:text-left"
+        >
+          Todos los derechos reservados. hecho con el ❤️
+        </p>
+      </div>
+    </div>
+  </footer>
+
   <div class="md:hidden" :class="{ hidden: !mobileMenuVisible }">
     <div
       class="fixed inset-0 z-20 flex flex-col items-center justify-center bg-gray-900 text-white"
